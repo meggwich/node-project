@@ -19,6 +19,10 @@ module.exports = {
           loader: 'babel-loader',
         },
       },
+      {
+        test: require.resolve('@meggwich/megpack'),
+        use: 'expose-loader?megpack',
+      },
     ],
   },
 };
